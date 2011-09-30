@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'twitter-bootstrap-rails'
+gem 'haml-rails'
 gem 'rails', '3.1.0'
 gem 'paperclip'
 gem 'sqlite3'
