@@ -6,5 +6,18 @@
  *= require_tree . 
 */
 .whitespace {
-    padding-top: 200px;
+    padding-top: 100px;
+}
+.header {
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    height: 85px;
+}
+.menu {
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    height: 30px;
+}
+.magnetta {
+    color: #FF0066
 }

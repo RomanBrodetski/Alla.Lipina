@@ -1,0 +1,17 @@
+%h1 Listing enenenes
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @enenenes.each do |enenene|
+    %tr
+      %td= link_to 'Show', enenene
+      %td= link_to 'Edit', edit_enenene_path(enenene)
+      %td= link_to 'Destroy', enenene, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Enenene', new_enenene_path

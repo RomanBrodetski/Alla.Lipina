@@ -1,5 +1,10 @@
 Untitled1::Application.routes.draw do
-  match '/admin' => 'admin#index'
+  resources :enenenes
+
+  match '/admin' => 'admin#new'
+  match '/admin/create' => "admin#create"
+  match '/home' => 'home#index'
+  match '/about' => 'home#about'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

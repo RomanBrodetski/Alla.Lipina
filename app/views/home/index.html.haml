@@ -1,0 +1,6 @@
+.highslide-gallery
+%ul.media-grid
+  -@photos.each do |p|
+    %li
+      %a.highslide{:href => p.image.url, :onclick => "return hs.expand(this, config1 )"}
+        =image_tag p.image.url(:thumb)
