@@ -7,5 +7,6 @@ class AdminController < ApplicationController
   def create
     @photo = Photo.create(params[:photo])
     @photo.save
+    redirect_to :action => :new
   end
 end
