@@ -1,4 +1,6 @@
+
 -@photos.each_with_index do |p, index|
-  %div{:class=> ((index % 7 == 0) ? 'row' : 'span2')}
+  -#%div{:class=> ((index % 7 == 0) ? 'row' : 'span2')}
+  .span2
     %a{:href => p.image.url}
-      =image_tag p.image.url(:thumb)
+      %img{:src=> p.greyimage.url(:thumb), :onmouseover => "this.src='%s'" % p.image.url(:thumb), :onmouseout => "this.src='%s'" % p.greyimage.url(:thumb)}

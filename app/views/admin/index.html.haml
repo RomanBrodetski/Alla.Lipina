@@ -1,0 +1,6 @@
+-@photos.each_with_index do |p, index|
+  -#%div{:class=> ((index % 7 == 0) ? 'row' : 'span2')}
+  .row
+    %img{:src=> p.greyimage.url(:thumb), :onmouseover => "this.src='%s'" % p.image.url(:thumb), :onmouseout => "this.src='%s'" % p.greyimage.url(:thumb)}
+    %a{:href => 'admin/delete/%s' % p.id} Удалить
+%a{:href => 'admin/new'} Добавить

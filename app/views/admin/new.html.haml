@@ -1,3 +1,9 @@
 = form_for @photo, :url => {:controller => :admin, :action =>  :create} do |f|
+  Оригинал:
   =f.file_field :image
-  =f.submit
+  %br
+  Затемненная версия:
+  =f.file_field :greyimage
+  %br
+  %br
+  =f.submit 'Создать!'
