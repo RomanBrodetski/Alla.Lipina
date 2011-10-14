@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-
+  http_basic_authenticate_with :name => "alla", :password => "childcatcher"
   def new
     @photo = Photo.new
   end
